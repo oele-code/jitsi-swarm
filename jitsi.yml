@@ -164,9 +164,9 @@ services:
             - TZ
         depends_on:
             - prosody
-        # deploy:
-        #     placement:
-        #         constraints: [node.hostname == t01_swarmnode]
+        deploy:
+            placement:
+                constraints: [node.hostname == worker.jitsi.oele.xyz]
         networks:
             meetjitsi:
 
