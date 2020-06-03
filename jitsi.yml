@@ -166,7 +166,7 @@ services:
             - prosody
         deploy:
             placement:
-                constraints: [node.hostname == worker.meet.oele.xyz]
+                constraints: [ node.role == worker ]
         networks:
             meetjitsi:
 
