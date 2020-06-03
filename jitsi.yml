@@ -11,7 +11,7 @@ services:
             labels:
                 traefik.port: 80
                 traefik.enable: 1
-                traefik.f1.frontend.rule: Host:jitsi.oele.xyz
+                traefik.f1.frontend.rule: Host:meet.oele.xyz
         volumes:
             - ${CONFIG}/web:/config
             - ${CONFIG}/web/letsencrypt:/etc/letsencrypt
@@ -166,7 +166,7 @@ services:
             - prosody
         deploy:
             placement:
-                constraints: [node.hostname == worker.jitsi.oele.xyz]
+                constraints: [node.hostname == worker.meet.oele.xyz]
         networks:
             meetjitsi:
 
