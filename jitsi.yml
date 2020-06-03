@@ -11,7 +11,7 @@ services:
             labels:
                 traefik.port: 80
                 traefik.enable: 1
-                traefik.f1.frontend.rule: Host:meet.oele.xyz
+                traefik.f1.frontend.rule: Host:jitsi.oele.xyz
         volumes:
             - ${CONFIG}/web:/config
             - ${CONFIG}/web/letsencrypt:/etc/letsencrypt
